@@ -2,23 +2,22 @@ import React, { useState } from 'react';
 import { Dimensions } from 'react-native';
 import { BottomNavigation, Text } from 'react-native-paper';
 import Colors from '../utils/colors';
+import Bloggers from './Bloggers';
 
 const screenWidth = Dimensions.get('screen').width;
 
 const Footer = () => {
   const [index, setIndex] = useState(0);
   const [routes] = useState([
-    { key: 'music', title: 'Music', icon: 'queue-music' },
-    { key: 'albums', title: 'Albums', icon: 'album' },
+    { key: 'feed', title: 'Feeds', icon: 'account' },
+    { key: 'new', title: 'New Blog', icon: 'album' },
   ]);
-
-  const MusicRoute = () => <Text>Music</Text>;
 
   const AlbumsRoute = () => <Text>Albums</Text>;
 
   const renderScene = BottomNavigation.SceneMap({
-    music: MusicRoute,
-    albums: AlbumsRoute,
+    feed: Bloggers,
+    new: AlbumsRoute,
   });
 
   return (
@@ -27,7 +26,6 @@ const Footer = () => {
       onIndexChange={setIndex}
       renderScene={renderScene}
       barStyle={{ width: screenWidth, backgroundColor: Colors.Primary }}
-
     />
   );
 };
