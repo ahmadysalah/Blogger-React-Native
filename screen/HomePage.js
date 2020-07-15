@@ -5,7 +5,7 @@ import Footer from '../components/FooterMenu';
 export default function HomePage() {
   return (
         <View>
-            <Text>HomePage</Text>
+           <Footer/>
         </View>
   );
 }
