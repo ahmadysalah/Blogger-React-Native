@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { NativeRouter, Switch, Route } from 'react-router-native';
 import WelcomeScreen from './screen/WelcomeScreen';
+import HomePage from './screen/HomePage';
 
 export default function App() {
   return (
@@ -9,7 +10,7 @@ export default function App() {
     <NativeRouter>
       <Switch>
         <Route exact path="/" component={WelcomeScreen} />
-        {/* <Route exact path="/image" component={ImageScreen} /> */}
+        <Route exact path="/home" component={HomePage} />
       </Switch>
     </NativeRouter>
     </View>
