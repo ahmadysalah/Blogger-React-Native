@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   StyleSheet, Image, View, Text,
 } from 'react-native';
+import { ActivityIndicator } from 'react-native-paper';
 import welcomePg from '../assets/bg.png';
 import logo from '../assets/Logo/logo.png';
+import Colors from '../utils/colors';
 
 export default function WelcomeScreen({ history: { push } }) {
   setTimeout(() => {
@@ -14,6 +16,7 @@ export default function WelcomeScreen({ history: { push } }) {
       <Text style={styles.bioText}>Designed By: Ahmad Salah</Text>
       <Image source={welcomePg} style={styles.background}/>
       <Image style={styles.logo} source={logo} />
+      <ActivityIndicator style={styles.limitation} animating={true} color={Colors.Primary} />
       </View>
   );
 }
@@ -34,5 +37,9 @@ const styles = StyleSheet.create({
   bioText: {
     position: 'absolute',
     bottom: 50,
+  },
+  limitation: {
+    position: 'absolute',
+    bottom: 100,
   },
 });

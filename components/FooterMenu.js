@@ -1,15 +1,33 @@
-import React from 'react';
-import {
-  StyleSheet, Text, View, Footer, Anchor,
-} from 'react-native';
+import React, { useState } from 'react';
+import { Dimensions } from 'react-native';
+import { BottomNavigation, Text } from 'react-native-paper';
+import Colors from '../utils/colors';
+import Bloggers from './Bloggers';
 
-export default function FooterMenue() {
+const screenWidth = Dimensions.get('screen').width;
+
+const Footer = () => {
+  const [index, setIndex] = useState(0);
+  const [routes] = useState([
+    { key: 'feed', title: 'Feeds', icon: 'account' },
+    { key: 'new', title: 'New Blog', icon: 'album' },
+  ]);
+
+  const AlbumsRoute = () => <Text>Albums</Text>;
+
+  const renderScene = BottomNavigation.SceneMap({
+    feed: Bloggers,
+    new: AlbumsRoute,
+  });
+
   return (
-        <Footer background="brand" pad="medium">
-        <Text>Copyright</Text>
-        <Anchor label="About" />
-      </Footer>
+    <BottomNavigation
+      navigationState={{ index, routes }}
+      onIndexChange={setIndex}
+      renderScene={renderScene}
+      barStyle={{ width: screenWidth, backgroundColor: Colors.Primary }}
+    />
   );
-}
+};
 
-const styles = StyleSheet.create({});
+export default Footer;

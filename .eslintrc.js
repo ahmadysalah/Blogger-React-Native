@@ -16,6 +16,7 @@ module.exports = {
     'airbnb-base',
   ],
   rules: {
+
     'arrow-body-style': 'warn',
     'no-use-before-define': ['error', { variables: false }],
 
