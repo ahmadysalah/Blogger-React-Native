@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import Footer from '../components/FooterMenu';
 
 export default function HomePage() {
@@ -9,5 +9,3 @@ export default function HomePage() {
         </View>
   );
 }
-
-const styles = StyleSheet.create({});
