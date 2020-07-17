@@ -16,7 +16,7 @@ export default function WelcomeScreen({ history: { push } }) {
       <Text style={styles.bioText}>Designed By: Ahmad Salah</Text>
       <Image source={welcomePg} style={styles.background}/>
       <Image style={styles.logo} source={logo} />
-      <ActivityIndicator style={styles.limitation} animating={true} color={Colors.Primary} />
+      <ActivityIndicator style={styles.limitation} animating={true} color={Colors.Complementary} />
       </View>
   );
 }
