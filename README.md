@@ -1,6 +1,5 @@
 # Blogger-React-Native
 
-![](https://i.imgur.com/vrfsp7B.png)
 
 [Vist Expo Application](https://expo.io/dashboard/ahmad.salah/builds/ae8557ff-a26c-4189-9775-6305b1f07959)
 
