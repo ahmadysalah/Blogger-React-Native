@@ -1,5 +1,7 @@
 # Blogger-React-Native
 
+| <img height=400 width=200 src='https://i.imgur.com/iwTx69D.png'/> | <img height=400 width=200 src='https://i.imgur.com/wnyEZwX.jpg'/> | 
+| -------- | -------- | 
 
 [Vist Expo Application](https://expo.io/dashboard/ahmad.salah/builds/ae8557ff-a26c-4189-9775-6305b1f07959)
 
@@ -16,7 +18,8 @@ Mobile application based on web blogger application, upload your photos anywhere
 - you can upload photos from the camera and camera roll.
 
 # Blogger Web App and API  :+1: 
-![](https://i.imgur.com/XD0Q9K7.png)
+<img height=100 width=100 src='https://i.imgur.com/XD0Q9K7.png'/>
+
 
 [Visit Blogger](https://w7-mariam-salah.herokuapp.com/)
 
